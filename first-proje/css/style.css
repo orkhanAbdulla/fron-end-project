@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+#navbar .navList{
+  margin-left: 70px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#navbar .navList li a{
+    font-family: 'Nunito', sans-serif;
+    margin: 0px 20px ;
+    padding: 0px;
+    color: #6F8BA4
+}
+
+#navbar .buttons{
+    display: flex;
+
+}
+
+#navbar .buttons li{
+    list-style-type: none;
+    margin: 32px 0px 0px 15px;
+    font-size: 12px;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
+#navbar .buttons li a{
+    text-decoration: none;
+}
+#navbar .buttons .signIn a{
+    padding: 7px 33px;
+    color: #1A153A;
+    border: 1px solid #1A153A;
+    border-radius: 5px;
+    transition: 0.5s;
+    font-weight: 900;
+}
+#navbar .buttons .signIn a:hover{
+    background-color: #1A153A;
+    color: white;
+    transition: 0.5s;
+}
+
+#navbar .buttons .signUp a{
+    padding: 7px 33px;
+    color: white;
+    border: 1px solid #1A153A;
+    background-color: #1A153A;
+    border-radius: 5px;
+    font-weight: 900;
+    transition: 0.5s;
+    
+    
+}
+#navbar .buttons .signUp a:hover{
+    background-color:white;
+    color:#1A153A;
+    transition: 0.5s;  
+}
+
+
+
+#home .header-text{
+margin: 150px 0px;
+}
+
+
+#home .header-text h1{
+    font-size: 30px;
+    font-weight: 400px;
+    color: #1E3056;
+    font-weight: 600;
+    line-height: 46px;
+}
+
+
+#home .header-text a{
+    text-decoration: none;
+    padding: 10px 33px;
+    font-weight: 700;
+    color: white;
+    border: 1px solid #1A153A;
+    background-color: #1A153A;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+#home .header-text p{
+    font-weight: 400;
+    line-height: 28px;
+    color: #697BA2;
+    letter-spacing: 1px;
+    padding: 20px 0px 30px 0px;
+}
+
+#home .header-text a:hover{
+    background-color: #100e1f;
+}
+
+
+
+#home .item-grid{
+    display: grid;
+    
+    grid-template-areas:
+     'item1 item2'
+     'item1 item4'
+     'item3 item4'
+   
+    
+     
+}
+
+
+.item1{ 
+    grid-area: item1;
+}
+.item2{
+    grid-area: item2;
+}
+.item3{
+    grid-area: item3;
+}
+.item4{
+    grid-area: item4;
+}
