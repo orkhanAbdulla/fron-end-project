@@ -55,8 +55,6 @@ body{
     border-radius: 5px;
     font-weight: 900;
     transition: 0.5s;
-    
-    
 }
 #navbar .buttons .signUp a:hover{
     background-color:white;
@@ -73,8 +71,6 @@ body{
 #intro .header-text{
 margin: 150px 0px;
 }
-
-
 #intro .header-text h1{
     font-size: 30px;
     font-weight: 400px;
@@ -82,7 +78,6 @@ margin: 150px 0px;
     font-weight: 600;
     line-height: 46px;
 }
-
 
 #intro .header-text a{
     text-decoration: none;
@@ -106,8 +101,6 @@ margin: 150px 0px;
 #intro .header-text a:hover{
     background-color: #100e1f;
 }
-
-
 
 #intro .item-grid{
     margin-left: 100px;
@@ -149,19 +142,13 @@ margin: 150px 0px;
     position: relative;
   
 }
-
-
 #intro .item-grid img{
     width: 265px;
     height: 100%;
     object-fit: cover;
     transition: 0.5s;
     
-
 }
-
-
-
 #intro .item-grid .image .content{
     position: absolute;
     top: 0;
@@ -176,16 +163,14 @@ margin: 150px 0px;
     font-size: 20px;  
 }
 
-
 /* header end */
-
 
 
 
 /*  promo start*/
 
 #promo{
-    margin-top: 100px;
+    margin: 100px 0px;
    
     }
 
@@ -198,18 +183,15 @@ margin: 150px 0px;
    box-shadow: 0 2px 48px 0 rgb(0 0 0 / 8%);
    color: #3B566E;
    transition: 0.5s;
-
-  
+   border-radius: 5px;  
 }
 #promo .tabBtn:hover{
     transition: 0.5s;
     background-color: #1A153A;
     color: white;
     text-decoration: none;
-    display: inline-block;
+    /* display: inline-block; */
 }
-
-
 #promo .tabBtn .icon span{
     display: inline-block;
     text-align: center;
@@ -221,18 +203,178 @@ margin: 150px 0px;
     color: black;
 }
 #promo .tabBtn .text h5{
-   
     font-weight: 400;
     font-size: 16px;
     margin-bottom: 15px
 }
 #promo .tabBtn .text p{
    letter-spacing: 0.88px;
-   margin-top: 5px;
    margin-top: 20px;
    font-size: 14px;
    font-weight: 400;
 }
 
 /*  promo end*/
+
+
+/* features star */
+#features .left-text h2{
+    font-weight: 400;
+    font-size: 28px;
+    color: #3B566E;
+    letter-spacing: 1.75px;
+}
+#features .left-text p{
+    color: #6F8BA4;
+    line-height: 28px;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 10px 0px;
+    
+    
+}
+.cloud{
+    padding: 100px 0px;
+    background-color: #F7FAFD;
+   
+}
+#features .Btn{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-weight: 400;
+    display: inline-block;
+    background: #fff;
+    box-shadow: 0 2px 48px 0 rgb(0 0 0 / 8%);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+#features .Btn span{
+    color: #3B566E;
+   
+}
+#features .Btn i{
+    margin-left: 22px;
+    margin-right: 32px;
+    color: #3B566E;
+    position: relative;
+    z-index: 2;   
+}
+#features .Btn::after{
+    content: '';
+    position: absolute;
+    left: -70px;
+    top: 0px;
+    width: 150px;
+    height: 100px;
+    transform: rotate(60deg);
+    background-color: #F7F6FF;
+    transition: 0.3s; 
+}
+
+#features .active::after{
+    content: '';
+    position: absolute;
+    left: -70px;
+    top: 0px;
+    width: 150px;
+    height: 120px;
+    transform: rotate(60deg);
+    background: #1A153A;
+}
+
+#features .Btn:hover::after{
+    height: 120px;
+    background: #1A153A;
+    transition: 0.1s;
+}
+
+#features .image img{
+    max-width: 100%;
+    padding-top: 65px;
+}
+
+#features .design{
+    padding: 100px 0px;
+    background-color: white;
+}
+
+/* features end */
+
+.parallax-window {
+    min-height: 315px;
+    background: transparent;
+}
+#parallax-num{
+    position: relative;
+    overflow: hidden;
+}
+#parallax-num:before{
+    content: '';
+    position: absolute;
+    width: 140%;
+    height: 140%;
+    opacity: .80;
+    background: #1A153A;
+    z-index: 0;
+    top: -20%;
+    left: -20%;
+}
+#parallax-num .parallax-content{
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+}
+#parallax-num .parallax-content .count-item{
+    position: absolute;
+    top: 100px;
+    width: 100%; 
+    transition: 0.3s;
+
+}
+#parallax-num .parallax-content .count-item:hover{
+    transform: translateY(-10%);
+    transition: 0.3s;
+}
+
+#parallax-num .parallax-content .count-item strong{
+    font-size: 40px;
+    letter-spacing: 1.72px;
+    margin-bottom: 15px;
+    margin-top: 70px;
+    font-weight: 400;
+
+}
+#parallax-num .parallax-content .count-item strong::before{
+    content: '';
+    position: absolute;
+    left: -14px;
+    right: 0px;
+    top: 60px;
+    margin: auto;
+    width: 115px;
+    height: 1px;
+    border-top: 1px dashed #fff;
+    font-weight: 400;
+}
+
+#parallax-num .parallax-content .count-item span{
+    display: block;
+    font-size: 20px;
+    letter-spacing: 0.86px;
+    margin-top: 15px;
+    font-weight: 400;
+}
+
+
+
+
+
 
