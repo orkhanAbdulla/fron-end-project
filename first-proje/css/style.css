@@ -589,7 +589,8 @@ margin: 150px 0px;
 
 
 #pricing-plans{
-    margin-bottom: 80px;
+    background-color: #f7fafd;
+    padding: 80px 0px;
 }
 #pricing-plans .header-text h2{
     font-weight: 400;
@@ -610,11 +611,12 @@ margin: 150px 0px;
 }
 
 #pricing-plans .item-menu .item-header{
-    border-bottom: 1px solid #F7F6FF;
+    border-bottom: 3px solid #F7F6FF;
     text-align: center;
     height: 130px;
     display: block;
     position: relative;
+    
 }
 
 #pricing-plans .item-center .item-header::after{
@@ -730,6 +732,8 @@ margin: 150px 0px;
 }
     /* pricing-plans end */
 
+
+    /* parallax-text start */
     #parallax-text{
         position: relative;
         overflow: hidden;
@@ -779,4 +783,86 @@ margin: 150px 0px;
         letter-spacing: 1px;
          margin-bottom: 40px;
     }
+
+    /* parallax end */
+
+    #blog-menu{
+        margin: 100px 0px;
+    }
+
+    #blog-menu .header-text h2{
+        font-weight: 400;
+        font-size: 28px;
+        color: #3B566E;
+        letter-spacing: 1.75px;
+        line-height: 38px;
+        margin-bottom: 20px;
+    }
     
+    #blog-menu .header-text span{
+        display: inline-block;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 1px;
+        margin-bottom: 50px;
+    }
+
+    #blog-menu .blog-cards{
+        text-align: center;
+    }
+
+    #blog-menu .blog-cards .image{
+        border-radius: 5px;
+        margin-bottom: 25px;
+        position: relative;
+        height: 200px;
+        overflow: hidden;
+    
+    }
+
+    #blog-menu .blog-cards .image img{
+        max-width: 100%;
+    }
+    #blog-menu .blog-cards .blog-text{
+        box-sizing: border-box;
+    }
+    #blog-menu .blog-cards .blog-text h3{
+        font-weight: 400;
+        font-size: 16px;
+        color: #3B566E;
+        letter-spacing: 1px;
+        line-height: 35px;
+    }
+    #blog-menu .blog-cards .blog-text span{
+        font-weight: 400;
+        font-size: 14px;
+        color: #6F8BA4;
+        letter-spacing: 0.88px;
+        line-height: 26px;
+        margin-bottom: 15px;
+        display: block;
+}
+
+    #blog-menu .blog-cards .blog-text a{
+        text-decoration: none;
+        width: 160px;
+        height: 44px;
+        line-height: 44px;
+        text-align: center;
+        display: inline-block;
+        border: none;
+        border-radius: 5px;
+        background: #1A153A;
+        font-weight: 700;
+        font-size: 12px;
+        color: #fff;
+        letter-spacing: 0.75px;
+        transition: 0.5s;
+        text-transform: uppercase;   
+    }
+    #blog-menu .blog-cards .blog-text a:hover{
+        transition: 0.5s;
+        background: #100d25;
+    }
+
