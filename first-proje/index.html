@@ -14,20 +14,23 @@
   <script src="https://kit.fontawesome.com/b6281e7052.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+    crossorigin="anonymous" />
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header>
     <div id="navbar">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
           <div class="logo">
-            <a class="navbar-brand" href="#"><img src="img/logo-dark.png"></a>
+            <a href="index.html"><img src="img/logo-dark.png"></a>
           </div>
           <ul class="navList navbar-nav mr-auto ">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -35,10 +38,10 @@
                 Discover
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
+                <a class="dropdown-item" href="#features">Features</a>
+                <a class="dropdown-item" href="#our-team">our-team</a>
+                <a class="dropdown-item" href="#pricing-plans">Pricing Plangs</a>
+                <a class="dropdown-item" href="#blog-menu">Latests Blogs</a>
               </div>
             </li>
             <li class="nav-item dropdown">
@@ -47,10 +50,10 @@
                 Pages
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
+                <a class="dropdown-item" href="about.html">About Us</a>
+                <a class="dropdown-item" href="#">Features</a>
+                <a class="dropdown-item" href="FAQ's.html">FAQ's</a>
+                <a class="dropdown-item" href="#">Blog</a>
               </div>
             </li>
             <li class="nav-item">
@@ -117,6 +120,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-3">
+          <div class="wow animate__animated animate__fadeInUp">
             <div class="tab-menu">
               <a class="tabBtn" href="">
                 <div class="icon">
@@ -129,34 +133,40 @@
               </a>
             </div>
           </div>
+          </div>
           <div class="col-lg-3">
-            <div class="tab-menu">
-              <a class="tabBtn" href="">
-                <div class="icon">
-                  <span><i class="fa fa-laptop"></i></i></span>
-                </div>
-                <div class="text mt-3">
-                  <h5>Network Services</h5>
-                  <p>Donec pellentesque turpis utium lorem imperdiet semper viverra.</p>
-                </div>
-              </a>
+            <div class="wow animate__animated animate__fadeInUp animate__delay-2">
+              <div class="tab-menu">
+                <a class="tabBtn" href="">
+                  <div class="icon">
+                    <span><i class="fa fa-laptop"></i></i></span>
+                  </div>
+                  <div class="text mt-3">
+                    <h5>Network Services</h5>
+                    <p>Donec pellentesque turpis utium lorem imperdiet semper viverra.</p>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
           <div class="col-lg-3">
-            <div class="tab-menu">
-              <a class="tabBtn" href="">
-                <div class="icon">
-                  <span><i class="fa fa-video-camera"></i></span>
-                </div>
-                <div class="text mt-3">
-                  <h5>Webcast Services</h5>
-                  <p>Facilisis arcu ligula, malesuada id tincidunt laoreet, facilisis at justo.</p>
-                </div>
-              </a>
+            <div class="wow animate__animated animate__fadeInUp animate__delay-3">
+              <div class="tab-menu">
+                <a class="tabBtn" href="">
+                  <div class="icon">
+                    <span><i class="fa fa-video-camera"></i></span>
+                  </div>
+                  <div class="text mt-3">
+                    <h5>Webcast Services</h5>
+                    <p>Facilisis arcu ligula, malesuada id tincidunt laoreet, facilisis at justo.</p>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
           <div class="col-lg-3">
-            <div class="tab-menu">
+          <div class="wow animate__animated animate__fadeInUp animate__delay-4">
+             <div class="tab-menu">
               <a class="tabBtn" href="">
                 <div class="icon">
                   <span><i class="fa fa-server"></i></span>
@@ -167,6 +177,7 @@
                 </div>
               </a>
             </div>
+          </div>
           </div>
         </div>
       </div>
@@ -234,8 +245,10 @@
             </div>
             <div class="col-lg-1"></div>
             <div class="col-lg-5">
-              <div class="image">
-                <img src="img/dark-1.png">
+              <div class="wow animate__animated animate__fadeInRight">
+                <div class="image">
+                  <img src="img/dark-1.png">
+                </div>
               </div>
             </div>
           </div>
@@ -245,8 +258,10 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-5">
-              <div class="image">
-                <img src="img/dark-2.png">
+              <div class="wow animate__animated animate__fadeInLeft">
+                <div class="image">
+                  <img src="img/dark-2.png">
+                </div>
               </div>
             </div>
             <div class="col-lg-1"></div>
@@ -453,86 +468,92 @@
         </div>
         <div class="row">
           <div class="col-lg-4">
-            <div class="item-menu">
-              <div class="item-header">
-                <h3>BASIC PLAN</h3>
-              </div>
-              <div class="item-text">
-                <div class="number"><span>1</span></div>
-                <div class="price">
-                  <span class="dollar">$</span>
-                 <span class="money">13.90</span>
-                  <span class="time">/Month</span>
+            <div class="wow animate__animated animate__fadeInUp">
+              <div class="item-menu">
+                <div class="item-header">
+                  <h3>BASIC PLAN</h3>
                 </div>
-                <ul class="list">
-                  <li class="active">Unlimited Website</li>
-                  <li class="active">Unlimited Users</li>
-                  <li class="active">5 GB Bandwidth</li>
-                  <li class="active">Highest Speed</li>
-                  <li>Data Security and Backupss</li>
-                  <li>1 GB Storage</li>
-                  <li>24x7 Great Support</li>
-                  <li>Monthly Reports and Analytics</li>
-                </ul>
-              </div>
-              <div class="item-button text-center">
-                <a href="#">Select Plan</a>
+                <div class="item-text">
+                  <div class="number"><span>1</span></div>
+                  <div class="price">
+                    <span class="dollar">$</span>
+                    <span class="money">13.90</span>
+                    <span class="time">/Month</span>
+                  </div>
+                  <ul class="list">
+                    <li class="active">Unlimited Website</li>
+                    <li class="active">Unlimited Users</li>
+                    <li class="active">5 GB Bandwidth</li>
+                    <li class="active">Highest Speed</li>
+                    <li>Data Security and Backupss</li>
+                    <li>1 GB Storage</li>
+                    <li>24x7 Great Support</li>
+                    <li>Monthly Reports and Analytics</li>
+                  </ul>
+                </div>
+                <div class="item-button text-center">
+                  <a href="#">Select Plan</a>
+                </div>
               </div>
             </div>
           </div>
           <div class="col-lg-4">
-            <div class="item-menu item-center">
-              <div class="item-header">
-                <h3 class="name">ADVANCED PLAN</h3>
-              </div>
-              <div class="item-text">
-                <div class="number"><span>2</span></div>
-                <div class="price">
-                  <span class="dollar">$</span>
-                 <span class="money">23.90</span>
-                  <span class="time">/Month</span>
+            <div class="wow animate__animated animate__fadeInUp animate__delay-2">
+              <div class="item-menu item-center">
+                <div class="item-header">
+                  <h3 class="name">ADVANCED PLAN</h3>
                 </div>
-                <ul class="list">
-                  <li class="active">Unlimited Website</li>
-                  <li class="active">Unlimited Users</li>
-                  <li class="active">5 GB Bandwidth</li>
-                  <li class="active">Highest Speed</li>
-                  <li class="active">Data Security and Backupss</li>
-                  <li class="active">1 GB Storage</li>
-                  <li>24x7 Great Support</li>
-                  <li>Monthly Reports and Analytics</li>
-                </ul>
-              </div>
-              <div class="item-button text-center">
-                <a href="#">Select Plan</a>
+                <div class="item-text">
+                  <div class="number"><span>2</span></div>
+                  <div class="price">
+                    <span class="dollar">$</span>
+                    <span class="money">23.90</span>
+                    <span class="time">/Month</span>
+                  </div>
+                  <ul class="list">
+                    <li class="active">Unlimited Website</li>
+                    <li class="active">Unlimited Users</li>
+                    <li class="active">5 GB Bandwidth</li>
+                    <li class="active">Highest Speed</li>
+                    <li class="active">Data Security and Backupss</li>
+                    <li class="active">1 GB Storage</li>
+                    <li>24x7 Great Support</li>
+                    <li>Monthly Reports and Analytics</li>
+                  </ul>
+                </div>
+                <div class="item-button text-center">
+                  <a href="#">Select Plan</a>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
-            <div class="item-menu">
-              <div class="item-header">
-                <h3>EXPERT PLAN</h3>
-              </div>
-              <div class="item-text">
-                <div class="number"><span>3</span></div>
-                <div class="price">
-                  <span class="dollar">$</span>
-                 <span class="money">33.90</span>
-                  <span class="time">/Month</span>
+          <div class="col-lg-4 ">
+            <div class="wow animate__animated animate__fadeInUp animate__delay-3">
+              <div class="item-menu">
+                <div class="item-header">
+                  <h3>EXPERT PLAN</h3>
                 </div>
-                <ul class="list">
-                  <li class="active">Unlimited Website</li>
-                  <li class="active">Unlimited Users</li>
-                  <li class="active">5 GB Bandwidth</li>
-                  <li class="active">Highest Speed</li>
-                  <li class="active">Data Security and Backupss</li>
-                  <li class="active">1 GB Storage</li>
-                  <li class="active">24x7 Great Support</li>
-                  <li class="active">Monthly Reports and Analytics</li>
-                </ul>
-              </div>
-              <div class="item-button text-center">
-                <a href="#">Select Plan</a>
+                <div class="item-text">
+                  <div class="number"><span>3</span></div>
+                  <div class="price">
+                    <span class="dollar">$</span>
+                    <span class="money">33.90</span>
+                    <span class="time">/Month</span>
+                  </div>
+                  <ul class="list">
+                    <li class="active">Unlimited Website</li>
+                    <li class="active">Unlimited Users</li>
+                    <li class="active">5 GB Bandwidth</li>
+                    <li class="active">Highest Speed</li>
+                    <li class="active">Data Security and Backupss</li>
+                    <li class="active">1 GB Storage</li>
+                    <li class="active">24x7 Great Support</li>
+                    <li class="active">Monthly Reports and Analytics</li>
+                  </ul>
+                </div>
+                <div class="item-button text-center">
+                  <a href="#">Select Plan</a>
+                </div>
               </div>
             </div>
           </div>
@@ -566,47 +587,49 @@
         </div>
         <div class="row">
           <div class="col-lg-4">
-           <div class="blog-cards">
+            <div class="blog-cards">
               <div class="image">
                 <img src="img/1 (2).jpg" alt="">
               </div>
-            <div class="blog-text">
-              <h3>Jirono Expands the Leadership Team with David Lin, Controller</h3>
-              <span>
-								Mauris tellus sem, ultrices varius nisl at, convallis iaculis mauris. Sed eget sem vitae purus tempus dignissim.
-							</span>
-              <a href="dark-blog-single.html">Read More</a>
+              <div class="blog-text">
+                <h3>Jirono Expands the Leadership Team with David Lin, Controller</h3>
+                <span>
+                  Mauris tellus sem, ultrices varius nisl at, convallis iaculis mauris. Sed eget sem vitae purus tempus
+                  dignissim.
+                </span>
+                <a href="#">Read More</a>
+              </div>
             </div>
-           </div>
           </div>
           <div class="col-lg-4">
             <div class="blog-cards">
-               <div class="image">
-                 <img src="img/2 (2).jpg" alt="">
-               </div>
-             <div class="blog-text">
-               <h3>Jirono Partners with Velocloud to Deliver Managed SD-WAN</h3>
-               <span>
-								Cras imperdiet faucibus sem, a dignissim urna feugiat sed. Interdum et malesuada fames ac ante ipsum.
-               </span>
-               <a href="dark-blog-single.html" class="btn-primary-line">Read More</a>
-             </div>
+              <div class="image">
+                <img src="img/2 (2).jpg" alt="">
+              </div>
+              <div class="blog-text">
+                <h3>Jirono Partners with Velocloud to Deliver Managed SD-WAN</h3>
+                <span>
+                  Cras imperdiet faucibus sem, a dignissim urna feugiat sed. Interdum et malesuada fames ac ante ipsum.
+                </span>
+                <a href="dark-blog-single.html" class="btn-primary-line">Read More</a>
+              </div>
             </div>
-           </div>
-           <div class="col-lg-4">
+          </div>
+          <div class="col-lg-4">
             <div class="blog-cards">
-               <div class="image">
-                 <img src="img/3 (2).jpg" alt="">
-               </div>
-             <div class="blog-text">
-               <h3>Corporate IT Solutions Adds Neva as Senior Account Executive</h3>
-               <span>
-								Quisque euismod nec lacus sit amet maximus. Ut convallis sagittis lorem auctor malesuada. Morbi auctor tortor.
-               </span>
-               <a href="dark-blog-single.html" class="btn-primary-line">Read More</a>
-             </div>
+              <div class="image">
+                <img src="img/3 (2).jpg" alt="">
+              </div>
+              <div class="blog-text">
+                <h3>Corporate IT Solutions Adds Neva as Senior Account Executive</h3>
+                <span>
+                  Quisque euismod nec lacus sit amet maximus. Ut convallis sagittis lorem auctor malesuada. Morbi auctor
+                  tortor.
+                </span>
+                <a href="dark-blog-single.html" class="btn-primary-line">Read More</a>
+              </div>
             </div>
-           </div>
+          </div>
         </div>
       </div>
     </section>
@@ -671,6 +694,9 @@
     crossorigin="anonymous"></script>
   <script src="js/jquery.countTo.js"></script>
   <script src="js/parallax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+    integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+    crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
 </body>
 
