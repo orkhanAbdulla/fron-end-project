@@ -10,6 +10,7 @@ $(function(){
       }
       )
       wow.init();
+     
 
     $(document).on("scroll",window,function(){
         if(!$("#navbar").hasClass("whiteing")){
@@ -33,4 +34,19 @@ $(function(){
             "background-color": "white"
         })
     };
+
+    $(document).on("click",".card-header",function(){
+        // $(".right-faq .card-body.active").removeClass("active")
+       $(this).parent().siblings().find(".card-body").slideUp()
+        $(this).next().slideToggle("fast")
+    })
+   
+    $(document).on("click",".navbar-toggler",function(){
+        if($(".navList").hasClass("d-none"))
+        $(".navList").removeClass("d-none")
+        else
+        $(".navList").addClass("d-none")
+    })
+    
 })
+

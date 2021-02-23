@@ -50,6 +50,7 @@ div#navbar.whiteing{
     visibility:visible;
     transition: all 0.5s;
     transform: translateY(0%);
+
 }
   
 
@@ -80,12 +81,14 @@ div#navbar.whiteing{
 
 #navbar .buttons{
     display: flex;
+    padding: 0px;
+    
 
 }
 
 #navbar .buttons li{
     list-style-type: none;
-    margin: 32px 0px 0px 15px;
+    margin: 25px 0px 0px 15px;
     font-size: 12px;
     font-family: 'Nunito', sans-serif;
     text-align: center;
@@ -120,6 +123,36 @@ div#navbar.whiteing{
     background-color:white;
     color:#1A153A;
     transition: 0.5s;  
+}
+@media screen and (max-width:768px){
+    #navbar .dropdown{
+        position: relative;
+    }
+    #navbar .dropdown .dropdown-menu{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    
+    .navList{
+        display: flex;
+        flex-direction: row;
+    
+    }
+    #navbar .navList li a{
+        margin: 0px 10px !important;
+    }
+     
+
+}
+@media screen and (min-width:768px){
+    .navbar-toggler{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 376px){
+    .buttons{display: none !important;}
 }
 
 /* navbar end */
@@ -195,6 +228,7 @@ margin: 150px 0px;
    
     
 }
+
 #intro .item-grid .item img:hover{
     transform: scale(1.1);
     transition: 0.5s;
@@ -225,6 +259,24 @@ margin: 150px 0px;
     line-height: 30px;
     font-size: 20px;  
 }
+
+
+@media screen and (max-width:768px){
+
+#intro .item-grid .image .content{
+    padding: 50px 15px;
+}
+#intro .header-text{
+    text-align: center;
+}
+
+#intro .item-grid{
+    margin-left: 80px;
+}
+
+}
+
+
 
 /* header end */
 
@@ -284,6 +336,8 @@ margin: 150px 0px;
    font-size: 14px;
    font-weight: 400;
 }
+
+
 
 /*  promo end*/
 
@@ -384,6 +438,11 @@ margin: 150px 0px;
     background-color: white;
 }
 
+@media screen and (max-width:768px){
+    #features .design .left-text{
+        margin-top: 50px;
+    } 
+}
 /* features end */
 
 
@@ -821,7 +880,7 @@ margin: 150px 0px;
         position: absolute;
         width: 140%;
         height: 140%;
-        opacity: .80;
+        opacity: 0.7;
         background: #1A153A;
         z-index: 0;
         top: -20%;
@@ -842,7 +901,7 @@ margin: 150px 0px;
         padding-bottom: 20px;
     }
     #parallax-text .parallax-content .info a{
-     width: 160px;
+       width: 160px;
      text-decoration: none;
     display: inline-block;
     height: 44px;
@@ -861,6 +920,42 @@ margin: 150px 0px;
         letter-spacing: 1px;
          margin-bottom: 40px;
     }
+
+    #parallax-text .parallax-above{
+         position: absolute;
+         top: 50%;
+    }
+    #parallax-text .parallax-above .info h1{
+        margin-bottom: 0px;
+        font-weight: 400;
+        font-size: 36px;
+        height: 50px;
+        line-height: 46px;
+        letter-spacing: 1.4px;
+        color: #fff;
+    
+    }
+    #parallax-text .parallax-above .info ul{
+        margin: 0px;
+        padding: 0px;
+    }
+    #parallax-text .parallax-above .info ul li{
+        display: inline-block;
+        font-weight: 400;
+        font-size: 14px;
+        color: #FFF7F5;
+        line-height: 30px;
+    
+        
+    }
+    #parallax-text .parallax-above .info ul .home{
+        font-weight: 400;
+        font-size: 14px;
+        color: #fff;
+        margin-right: 10px;
+    }
+    
+   
 
     /* parallax end */
 
@@ -1088,6 +1183,77 @@ margin: 150px 0px;
     line-height: 26px;
     margin-bottom: 20px;
 }
+    /* FAQ's start */
+
+#accordion{
+  margin: 100px 0px;
+}
+#accordion .left-faq h2{
+    font-size: 30px;
+    color: #1A153A;
+    letter-spacing: 1.88px;
+    margin-bottom: 20px;
+}
+
+#accordion .left-faq p{
+    margin-bottom: 30px;
+    line-height: 30px;
+    font-size: 17px;
+}
 
 
+#accordion .left-faq a{
+    text-decoration: none;
+    width: 160px;
+    margin: auto;
+    margin-bottom: 40px;
+    display: inline-block;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    border-radius: 5px;
+    background: #1A153A;
+    font-weight: 700;
+    font-size: 12px;
+    color: #fff;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+    transition: all 0.5s;
+}
 
+#accordion .left-faq a:hover{
+    transition: all 0.5s;
+    background: #120f27;
+}
+
+#accordion .right-faq .card{
+    border: none;
+    width: 100%;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #3B566E;
+    cursor: pointer;
+    box-shadow: 0 2px 48px 0 rgb(0 0 0 / 8%);
+}
+#accordion .right-faq .card-header{
+    transition: 0.5s; 
+  background-color: #fff;
+}
+#accordion .right-faq .card-header:hover{
+    padding-left: 35px;
+    transition: 0.5s;
+    background-color: #F7F6FF;
+    
+}
+#accordion .right-faq .card-body{
+    display: none;
+}
+#accordion .right-faq .card-body.active{
+    display: block
+}
+
+/* 
+@media screen and (max-width: 380px){
+    .navList{display: none !important;}
+} */
