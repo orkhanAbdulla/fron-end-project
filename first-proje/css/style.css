@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 
 body{
     color: #6F8BA4;
@@ -291,7 +295,9 @@ margin: 150px 0px;
 }
 
 
-@media screen and (max-width:990px){
+
+
+@media screen and (max-width:992px){
 
 #intro .item-grid .image .content{
     padding: 50px 15px;
@@ -306,19 +312,15 @@ margin: 150px 0px;
 }
 
 }
-@media screen and (max-width:576px){
-    #intro .item-grid{
-        margin-left: 0px;
-        
-    }
-}
 @media screen and (max-width:768px){
     #intro .item-grid{
         margin-left: 0px;
         
     }
-
 }
+
+
+
 
 
 
@@ -516,11 +518,18 @@ margin: 150px 0px;
     color: #fff;
     font-weight: 400;
 }
-#parallax-num .parallax-content .count-item{
+#parallax-num .counter-line{
     position: absolute;
-    top: 100px;
-    width: 100%; 
+    left: 200px;
+    right: 200px;
+    top: 30%;
+    
+}
+
+#parallax-num .parallax-content .count-item{
+   
     transition: 0.3s;
+    width: 100%;
 
 }
 #parallax-num .parallax-content .count-item:hover{
@@ -556,6 +565,29 @@ margin: 150px 0px;
     margin-top: 15px;
     font-weight: 400;
 }
+
+
+@media screen and (max-width: 992px){
+    #parallax-num .counter-line{
+        left: 0px;
+        right: 0px;
+        top: 25%;
+    }
+}
+@media screen and (max-width:576px) {
+    #parallax-num .counter-line{
+        left: unset;
+        right: 0;
+        top: 10%;
+    }
+    #parallax-num .parallax-window {
+        min-height: 864px !important;
+    
+    }
+    
+}
+
+
 
 
 /* paralax end */
@@ -606,9 +638,7 @@ margin: 150px 0px;
     font-size: 14px;
     color: #fff;
 }
-#Info .footer-info li a:hover{
-    transform: translateX(10%)
-}
+
 
 #Info .footer-info li a span{
     font-weight: 400;
@@ -616,6 +646,11 @@ margin: 150px 0px;
     height: 32px;
     line-height: 32px;
     color: #FFF7F5;
+    transition: 0.3s;
+}
+#Info .footer-info li a:hover span{
+    padding-left: 8px;
+    transition: 0.3s;
 }
 
 #Info .address p{
@@ -1175,7 +1210,7 @@ margin: 150px 0px;
     line-height: 26px;
     margin-bottom: 20px;
 }
-@media screen and (max-width:990px){
+@media screen and (max-width:992px){
     #mission .about .about-image{
 
         width: 100% !important;
@@ -1254,7 +1289,7 @@ margin: 150px 0px;
     line-height: 26px;
     margin-bottom: 20px;
 }
-@media screen and (max-width:990px){
+@media screen and (max-width:992px){
     #vision .about .about-image{
          
         width: 100% !important;
@@ -1264,7 +1299,7 @@ margin: 150px 0px;
     #vision .about .about-text{
         position: relative !important;
         width: 100% !important;
-        transform: translateY(-5%) !important;
+        transform: translateY(-10%) !important;
              
     }
     @media screen and (max-width:576px){
