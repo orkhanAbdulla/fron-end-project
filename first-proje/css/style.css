@@ -29,6 +29,8 @@ div#navbar.whiteing{
     padding: 15px 0px;
 }
 
+
+
 #navbar .dropdown .dropdown-menu{
     display: block;
     opacity: 0;
@@ -64,6 +66,9 @@ div#navbar.whiteing{
     border-bottom: 1px solid #F7F6FF;
     padding-left: 20px;
     margin: 0px;
+}
+#navbar .dropdown .dropdown-item:active{
+    background-color: unset !important;
 }
 #navbar .navList{
   margin-left: 70px;
@@ -124,36 +129,61 @@ div#navbar.whiteing{
     color:#1A153A;
     transition: 0.5s;  
 }
-@media screen and (max-width:768px){
+@media screen and (max-width:992px){
     #navbar .dropdown{
         position: relative;
     }
     #navbar .dropdown .dropdown-menu{
         position: absolute;
-        bottom: 0;
-        left: 0;
+        left: 65%;
+         top: 10px;
     }
     
     .navList{
-        display: flex;
+        left: -7%;
+        display: none;
         flex-direction: row;
-    
+        position: absolute;
+        top: 95%;
+        width: 95%;
+        background: white;
+        border-radius: 5px;
+       
     }
+    .nav-link{
+        display: flex;
+        justify-content: space-between;
+    }
+    
     #navbar .navList li a{
         margin: 0px 10px !important;
     }
-     
+    .buttons{display: none !important;}
+   
 
 }
-@media screen and (min-width:768px){
+@media screen and (min-width:992px){
     .navbar-toggler{
         display: none;
     }
+   
+   
+}
+@media screen and (max-width:576px){
+    .navList{
+        position: absolute;
+        left: -15%;
+         width: 93%;
+       
+    }
+    #navbar .dropdown .dropdown-menu{
+        top: 11px;
+        position: absolute;
+        left: 90px;
+    }
+  
 }
 
-@media screen and (max-width: 376px){
-    .buttons{display: none !important;}
-}
 
 /* navbar end */
 
@@ -261,13 +291,14 @@ margin: 150px 0px;
 }
 
 
-@media screen and (max-width:768px){
+@media screen and (max-width:990px){
 
 #intro .item-grid .image .content{
     padding: 50px 15px;
 }
 #intro .header-text{
     text-align: center;
+    margin: 0px 0px 50px 0px;
 }
 
 #intro .item-grid{
@@ -275,6 +306,20 @@ margin: 150px 0px;
 }
 
 }
+@media screen and (max-width:576px){
+    #intro .item-grid{
+        margin-left: 0px;
+        
+    }
+}
+@media screen and (max-width:768px){
+    #intro .item-grid{
+        margin-left: 0px;
+        
+    }
+
+}
+
 
 
 
@@ -511,6 +556,8 @@ margin: 150px 0px;
     margin-top: 15px;
     font-weight: 400;
 }
+
+
 /* paralax end */
 
 
@@ -888,7 +935,7 @@ margin: 150px 0px;
     }
     #parallax-text .parallax-content{
         position: absolute;
-        top: 100px;
+        top: 80px;
         width: 100%; 
         z-index: 3;
     }
@@ -954,6 +1001,7 @@ margin: 150px 0px;
         color: #fff;
         margin-right: 10px;
     }
+   
     
    
 
@@ -1041,6 +1089,8 @@ margin: 150px 0px;
         background: #100d25;
     }
 
+   
+
 /* about.html start */
 
 /* promo start */
@@ -1101,7 +1151,7 @@ margin: 150px 0px;
     float: right;
     right: 0px;
     top: 50%;
-    transform: perspective(1px) translateY(-50%);
+    transform: translateY(-50%);
     background: #fff;
     box-shadow: 0 2px 48px 0 rgb(0 0 0 / 8%);
     border-radius: 5px;
@@ -1124,6 +1174,27 @@ margin: 150px 0px;
     font-size: 14px;
     line-height: 26px;
     margin-bottom: 20px;
+}
+@media screen and (max-width:990px){
+    #mission .about .about-image{
+
+        width: 100% !important;
+        height: 400px;
+        margin-bottom: 30px;
+    }
+    #mission .about .about-text{
+        position: relative !important;
+        width: 100% !important;
+        transform: translateY(0) !important;
+    }
+   
+}
+@media screen and (max-width:576px){
+    #mission .about .about-image{
+        height: 275px !important;
+        margin-bottom: 0px;
+    }
+    
 }
 
 #vision{
@@ -1159,7 +1230,7 @@ margin: 150px 0px;
     z-index: 2;
     width: 40%;
     top: 50%;
-    transform: perspective(1px) translateY(-50%);
+    transform: translateY(-50%);
     background: #fff;
     box-shadow: 0 2px 48px 0 rgb(0 0 0 / 8%);
     border-radius: 5px;
@@ -1183,6 +1254,30 @@ margin: 150px 0px;
     line-height: 26px;
     margin-bottom: 20px;
 }
+@media screen and (max-width:990px){
+    #vision .about .about-image{
+         
+        width: 100% !important;
+        height: 400px;
+        
+    }
+    #vision .about .about-text{
+        position: relative !important;
+        width: 100% !important;
+        transform: translateY(-5%) !important;
+             
+    }
+    @media screen and (max-width:576px){
+        #vision .about .about-image{
+            height: 200px;
+        }
+    }
+   
+}
+
+
+
+
     /* FAQ's start */
 
 #accordion{

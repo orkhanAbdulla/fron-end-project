@@ -42,10 +42,11 @@ $(function(){
     })
    
     $(document).on("click",".navbar-toggler",function(){
-        if($(".navList").hasClass("d-none"))
-        $(".navList").removeClass("d-none")
-        else
-        $(".navList").addClass("d-none")
+        // if($(".navList").hasClass("d-none"))
+        // $(".navList").removeClass("d-none")
+        // else
+        // $(".navList").addClass("d-none")
+        $(this).next().slideToggle("fast")
     })
     
 })
