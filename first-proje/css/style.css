@@ -720,22 +720,47 @@ margin: 150px 0px;
     margin-bottom: 50px;
 }
 
+#our-team .team-card{
+    box-shadow: 0 2px 48px 0 rgb(0 0 0 / 8%);
+    position: relative;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
 
 #our-team .team-card .team-content{
  text-align: center;
- box-shadow: 0 2px 48px 0 rgb(0 0 0 / 8%);
- position: relative;
- border-bottom-left-radius: 5px;
- border-bottom-right-radius: 5px;
- 
 }
 
-#our-team .team-card .team-content .team-info{
-    background-color: #35305c;
-    padding-top: 10px;
-    padding-bottom: 10px;
+#our-team .team-card .team-content::before{
+    content: " ";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-image: linear-gradient(135deg, #1A153A 0%, #565178 100%);
+    height: 75px;
+    z-index: -1;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    transition: all 0.5s;
+}
+#our-team .team-card .team-content:hover::before{
+    height: 135px;
+    transition: all 0.5s;
+}
+#our-team .team-card .team-content:hover .social li a{
+    color: white;
+    transition: all 0.5s;
+}
+#our-team .team-card:hover .team-img{
+    bottom: -35px;
+    transition: all 0.5s;
+}
+#our-team .team-card .team-content .team-info{
+    margin-top: 0px;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #our-team .team-card .team-content .team-info h3{
@@ -760,6 +785,7 @@ margin: 150px 0px;
     padding: 0px;
     margin-top: 15px;
     margin-bottom: 15px;
+  
 }
 #our-team .team-card .team-content .social li{
     list-style: none;
@@ -771,6 +797,7 @@ margin: 150px 0px;
     color: #1A153A;
     font-size: 15px;
     letter-spacing: 15px;
+    transition: all 0.5s;
 }
 
 #our-team .team-card .team-content p{
@@ -794,7 +821,8 @@ margin: 150px 0px;
     left: 0px;
     right: 0px;
     margin: auto;
-    bottom: -25px;
+    bottom: -45px;
+    transition: all 0.5s;
 }
     
 #our-team .team-card .team-img img{
@@ -1309,9 +1337,6 @@ margin: 150px 0px;
     }
    
 }
-
-
-
 
     /* FAQ's start */
 
