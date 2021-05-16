@@ -196,7 +196,7 @@ div#navbar.whiteing{
 /* header start */
 #intro{
     padding-top: 100px;
-    background: url("../img/header-bg.svg") top left no-repeat;
+    
 }
 #intro .header-text{
 margin: 150px 0px;
@@ -1408,7 +1408,11 @@ margin: 150px 0px;
     display: block
 }
 
-/* 
-@media screen and (max-width: 380px){
-    .navList{display: none !important;}
-} */
+
+
+
+ 
+
+
+
+
